@@ -1,0 +1,138 @@
+/*ESTILOS DE PRESUPUESTOS - NIER AUTOMATA Hoja de estilos para la página de presupuestos*/
+
+/* Reseteo universal: Aplica box-sizing a todos los elementos */
+*{
+    box-sizing: border-box;
+}
+
+/*ESTILOS DEL CUERPO*/
+body{
+    /* Familia de fuentes sin serifs para mejor legibilidad */
+    font-family: Arial, Helvetica, sans-serif;
+    /* Elimina márgenes por defecto */
+    margin: 0;
+    /* Imagen de fondo del sitio */
+    background-image: url('../images/933824.png');
+    /* Fija el fondo mientras se hace scroll */
+    background-attachment: fixed;
+    /* Cubre toda el área del fondo */
+    background-size: cover;
+    /* Centra la imagen de fondo */
+    background-position: center;
+    /* Altura mínima de 100% de la ventana del navegador */
+    min-height: 100vh;
+    /* Usa CSS Grid para distribuir elementos verticalmente */
+    display: grid;
+    /* Define 5 filas: header, nav, contenido principal, pie, espacios adicionales */
+    grid-template-rows: auto auto 1fr auto auto;
+    /* Overlay semi-transparente negro sobre la imagen de fondo (opacidad 50%) */
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/*ESTILOS DEL ENCABEZADO*/
+header {
+    /* Espaciado interno de 60px */
+    padding: 60px;
+    /* Centra el contenido horizontalmente */
+    text-align: center;
+    /* Fondo azul oscuro semi-transparente */
+    background-color: rgba(10, 20, 40, 0.6);
+    /* Borde negro de 1px */
+    border: 1px solid black;
+}
+
+/* Estilos específicos para el logo/imagen en el header */
+header h1 img {
+    /* Responsivo: máximo ancho del 100% del contenedor */
+    max-width: 100%;
+    /* Mantiene las proporciones de la imagen */
+    height: auto;
+    /* Límite máximo de ancho más pequeño para mejor proporción */
+    max-width: 300px;
+}
+
+/*ESTILOS DE LA NAVEGACIÓN*/
+nav {
+    /* Color de texto negro */
+    color: rgb(0, 0, 0);
+    /* Espaciado interno */
+    padding: 10px;
+    /* Usa CSS Grid para organizar enlaces */
+    display: grid;
+    /* Crea 3 columnas de igual tamaño para los enlaces */
+    grid-template-columns: repeat(3, 1fr);
+    /* Espacio entre los elementos */
+    gap: 10px;
+    /* Fondo azul oscuro semi-transparente */
+    background-color: rgba(10, 20, 40, 0.6);
+}
+
+/* Estilos de los enlaces de navegación */
+nav a {
+    /* Cursor tipo pointer al pasar sobre el enlace */
+    cursor: pointer;
+    /* Centra el texto del enlace */
+    text-align: center;
+    /* Espaciado interno */
+    padding: 8px;
+    /* Texto más grueso/negrita */
+    font-weight: bold;
+    /* Fondo blanco */
+    background-color:rgb(255, 255, 255);
+    /* Elimina el subrayado por defecto de enlaces */
+    text-decoration: none;
+    /* Hereda el color del elemento padre */
+    color: inherit;
+    /* Transición suave para transformaciones y color de fondo (0.2 segundos) */
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+/* Efecto cuando se hace clic en un enlace de navegación */
+nav a:active {
+    /* Reduce el tamaño del enlace al 90% */
+    transform: scale(0.9);
+    /* Cambia el fondo a gris claro */
+    background-color: #aaa;
+}
+
+/* Estilos para la sección de imagen más reciente */
+.latest-image {
+    text-align: center;
+    margin: 20px auto;
+}
+
+.latest-image h2 {
+    margin-bottom: 12px;
+
+}
+
+.latest-image img {
+    max-width: 100%;
+    height: auto;
+    display: inline-block;
+}
+
+.titulo{
+    background-color: rgba(10, 20, 40, 0.6);
+}
+/* ========== ESTILOS DEL PIE DE PÁGINA (FOOTER) ========== */
+footer {
+    /* Centra el contenido horizontalmente */
+    text-align: center;
+    /* Espaciado interno */
+    padding: 60px;
+    /* Fondo azul oscuro semi-transparente */
+    background-color: rgba(10, 20, 40, 0.6);
+    /* Texto blanco */
+    color: white;
+    /* Borde negro */
+    border: 1px solid black;
+}
+
+/* Enlaces dentro del pie de página */
+footer a {
+    /* Espaciado horizontal a los lados del enlace */
+    margin: 0 10px;
+    /* Elimina el subrayado por defecto de enlaces */
+    text-decoration: none;
+}

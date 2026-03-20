@@ -1,0 +1,85 @@
+<!--PÁGINA DE PRESUPUESTO - NIER AUTOMATA Formulario para solicitar presupuestos-->
+
+<!DOCTYPE html>
+<html lang="es"> <!-- Idioma español -->
+<head>
+    <!-- Configuración de caracteres (UTF-8) -->
+    <meta charset="UTF-8">
+    <!-- Configuración responsiva para dispositivos móviles -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título de la página -->
+    <title>NieR</title>
+    <!-- Vinculación presupuestos.css -->
+    <link rel="stylesheet" href="../css/presupuestos.css">
+</head>
+<body>
+    <!--ENCABEZADO-->
+    <header> <!-- Sección superior con el título principal -->
+        <h1><img src="../images/Nier-Automata-Logo-PNG.png" alt="NieR Automata Logo" style="max-width: 100%; height: auto;"></h1>  <!-- Logo principal de la página -->
+    </header>
+
+    <!--NAVEGACIÓN-->
+    <nav> <!-- Barra de navegación con enlaces a otras páginas -->
+        <a href="../index.html">Inicio</a> <!-- Enlace a página principal -->
+        <a href="contacto.html">Contacto</a> <!-- Enlace a página de contacto -->
+        <a href="productos.html">Productos</a> <!-- Enlace a página de productos -->
+    </nav>
+    
+    <!--CONTENIDO PRINCIPAL-->
+    <main> <!-- Sección principal con el formulario de presupuesto -->
+        <!-- Título de la sección -->
+        <h1>Solicitud de Presupuesto</h1>
+
+        <!-- Formulario POST para solicitar presupuesto -->
+        <form action="#" method="post">
+
+            <!-- Campo de nombre -->
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre"><br><br>
+
+            <!-- Campo de email -->
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required placeholder="ejemplo@email.com"><br><br>
+
+            <!-- Campo de teléfono -->
+            <label for="telefono">Teléfono:</label><br>
+            <input type="tel" id="telefono" name="telefono" required pattern="[0-9]{9}" placeholder="123456789"><br><br>
+
+            <!-- Campo de mensaje/solicitud de información -->
+            <label for="mensaje">Solicite más información:</label><br>
+            <textarea id="mensaje" name="mensaje" rows="5" required placeholder="Escribe tu mensaje..."></textarea><br><br>
+
+            <!-- Checkbox para aceptar política de privacidad -->
+            <label for="privacidad">
+                Acepto la <a href="#" target="_blank">Política de privacidad</a>
+                <input type="checkbox" id="privacidad" name="privacidad" required>
+            </label><br><br>
+
+            <!-- Botón de envío del formulario -->
+            <button type="submit">Enviar</button>
+        </form>
+    </main>
+
+    <!--PIE DE PÁGINA-->
+    <footer> <!-- Sección final con información de contacto y redes sociales --> <!-- Sección final con información de contacto y redes sociales -->
+        <!-- Información de ubicación -->
+        <p>📍 Dirección: C. de Murcia 30420 Calasparra, Murcia</p>
+        <!-- Copyright del sitio -->
+        <p>© NieR</p>
+        
+        <!-- Enlaces a redes sociales con iconos -->
+        <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
+            <img src="../images/gorjeo.png" alt="Twitter" width="40" height="40" />
+        </a>
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+            <img src="../images/instagram.png" alt="Instagram" width="40" height="40" />
+        </a>
+        <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">
+            <img src="../images/youtube.png" alt="YouTube" width="40" height="40" />
+        </a>
+        <br>
+        <!-- Enlace a aviso legal -->
+        <a href="view/aviso-legal.html">Aviso legal</a>
+    </footer>
+</body>
+</html>
